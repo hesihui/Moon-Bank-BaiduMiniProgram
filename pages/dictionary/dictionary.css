@@ -1,0 +1,84 @@
+/* miniprogram/pages/status/status.wxss */
+
+.scroll-view {
+    height: 5.6rem;
+    white-space: nowrap;
+}
+
+.color-a,
+.color-b,
+.color-c {
+    line-height: .3rem;
+    height: 5.6rem;
+    text-align: left;
+    font-size: .16rem;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.color-a {
+    background-color: #5B9FFF;
+}
+.color-b {
+    background-color: #85B8FF;
+}
+.color-c {
+    background-color: #ADCFFF;
+}
+
+.row-view {
+    /* display: inline-block !important;
+    width: 100%;
+    height: 5.8rem;
+    line-height: 5.8rem; */
+}
+
+.page-section-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 .23rem;
+}
+
+.page-section-btns > view {
+    flex: 1;
+    height: .28rem;
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #6895FF;
+    border: .007rem solid #38F;
+    border-radius: .05rem;
+    margin: .1rem .14rem;
+}
+
+.scroll-to-top {
+    border-right: 1px solid #ddd;
+}
+
+.next-page {
+    border-left: 1px solid #ddd;
+}
+
+
+.horizontal-rolling {
+    height: 4.5rem;
+}
+
+.arrange {
+    display: flex;
+}
+
+.scroll-item {
+    padding: .17rem .17rem;
+    height: 2.5rem;
+}
+
+.scroll-image {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: .15rem;
+}

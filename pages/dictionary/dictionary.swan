@@ -1,0 +1,44 @@
+                <!--miniprogram/pages/status/status.wxml-->
+                <view class="wrap">
+                    <view class="card-area">
+                        <scroll-view
+                            class="scroll-view"
+                            scroll-y
+                            upper-threshold="1"
+                            lower-threshold="1"
+                            scroll-top="{= scrollTop =}"
+                            scroll-into-view="{= scrollIntoView =}"
+                            scroll-with-animation="true"
+                            enable-back-to-top="true"
+                            bindscrolltoupper="upper"
+                            bindscrolltolower="lower"
+                            bindscroll="scroll">
+                            <view id="one" class="color-a">
+                            <view class="box" s-for="historyList" s-for-index="key" s-for-item="value">
+
+                                <view id="{{value.timestamp}}" class="item">
+                                    日期：{{value.timestamp:}} </br>
+                                    当日心情：{{value.mood}}</br>
+                                    是否想改变：{{value.change}}</br>
+                                    留言： </br>
+                                    {{value.notes}} </br>
+                                </view>
+                            </view>
+                            <!-- <view id="two" class="color-b">B</view>
+                            <view id="three" class="color-c">D</view>
+                            <view id="three" class="color-a">E</view>
+                            <view id="three" class="color-c">F</view>
+                            <view id="three" class="color-a">G</view>
+                            <view id="three" class="color-c">H</view>
+                            <view id="three" class="color-a">I</view>
+                            <view id="three" class="color-c">J</view>
+                            <view id="three" class="color-a">K</view>
+                            <view id="three" class="color-c">L</view> -->
+                        </scroll-view>
+                        <view class="page-section-btns">
+                            <view class="scroll-to-top" bindtap="scrollToTop">回顶部</view>
+                            <view class="next-page" bindtap="tap">下一页</view>
+                            <!-- <view bindtap="tapMove">滚动</view> -->
+                        </view>
+                    </view>
+                </view>

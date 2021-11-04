@@ -1,0 +1,19 @@
+<view class="wrap">
+    <view class="card-area">
+        <block s-if="logged">
+        <view class="display-area">
+            <image mode="aspectFit" class="display-area-image" src="{{imageSrc}}"></image>
+            <view class="nickname {{nameColor}}">{{nickname}}</view>
+        </view>
+        </block>
+        <block s-if="!logged">
+        <view>
+          <view class="display-area">
+            <text>亲，您还没有登录哟，请登录后再体验！</text>
+          </view>
+          <button bindgetuserinfo="onGetUserInfo" type="primary" open-type="getUserInfo" hover-stop-propagation="true">获取用户信息</button>
+          <button bind:tap="onClearUserInfo" type="default" hover-stop-propagation="true">清空</button>
+        </view>
+        </block>
+    </view>
+</view>
